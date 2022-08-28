@@ -26,14 +26,13 @@ app.use("/api", paymentRoutes);
 //     });
 // }
 
-const dbURI = "mongodb://localhost:27017/fitnessecommerce";
-const port = process.env.PORT || 4000;
+const dbURI = "mongodb://localhost:27017/fitnessecommerce"; 
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() =>
-    app.listen(port, () => console.log(`Server running on http://localhost:${port}`))
+    app.listen(process.env.PORT || 4000, () => console.log(`Server running on http://localhost:${port}`))
   )
   .catch((err) => err);
