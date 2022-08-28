@@ -25,10 +25,9 @@ app.use("/api", paymentRoutes);
 //       res.sendFile(path.resolve(__dirname,'client','build','index.html'));
 //     });
 // }
-
-const dbURI = "mongodb://localhost:27017/fitnessecommerce"; 
+ 
 mongoose
-  .connect(dbURI, {
+  .connect(process.env.dbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
