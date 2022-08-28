@@ -6,10 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "16.14.0",
-    "npm": "8.3.1"
-  },
   "author": "Bikash Gyawali",
   "license": "ISC",
   "dependencies": {
