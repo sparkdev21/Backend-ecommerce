@@ -7,13 +7,8 @@
     "node": "16.4.0"
   },
   "scripts": {
-    "dev": "index.js start",
-    "start": "serve -s build",
-    "build": "index.js build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
-    },
+    "start": "node index.js"
+  },
   "author": "Bikash Gyawali",
   "license": "ISC",
   "dependencies": {
