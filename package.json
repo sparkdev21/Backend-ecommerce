@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node":"16.14.0"
+    "node": "16.14.0"
   },
   "scripts": {
     "start": "node index.js",
-    "test":"echo\"Error: no test specified\" && exit 1"
+    "test": "echo\"Error: no test specified\" && exit 1"
   },
   "author": "Bikash Gyawali",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "mongoose-cli": "^1.0.5",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.7.7",
+    "serve": "^14.0.1",
     "stripe": "^10.0.0",
     "validator": "^13.7.0"
   }
